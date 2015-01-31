@@ -141,6 +141,7 @@ static const int GRID_COLUMNS = 10;
 }
 - (void) updateCreatures
 {
+    _totalAlive = 0;
     for(int i = 0;i < [_gridArray count];i ++)
     {
         for(int j = 0;j < [_gridArray[i] count];j++)
@@ -154,6 +155,7 @@ static const int GRID_COLUMNS = 10;
             {
                 currentCreature.isAlive = false;
             }
+            if(currentCreature.isAlive) _totalAlive ++;
         }
     }
 }

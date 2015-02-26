@@ -98,7 +98,7 @@ static const int GRID_COLUMNS = 10;
     _generation++;
 }
 
-- (int) countNeighbors;
+- (void) countNeighbors;
 {
     // iterate through the rows
     // note that NSArray has a method 'count' that will return the number of elements in the array
